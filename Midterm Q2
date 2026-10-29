@@ -1,0 +1,16 @@
+price = float(input("Enter the price of the sale item (e.g., 3.99): "))
+Enter the price of the sale item (e.g., 3.99): 4.99
+state = input("Enter the state to which the item to be shipped (e.g., TX, LA, CA): ")
+Enter the state to which the item to be shipped (e.g., TX, LA, CA): LA
+
+state = state.strip().upper()
+
+if state == "TX" or "LA":
+    shipping_tax = 1.25
+elif state == "CA":
+    shipping_tax = 3.25
+else:
+    shipping_tax = 0.50
+
+print("The shipping tax is:", shipping_tax)
+The shipping tax is: 1.25
